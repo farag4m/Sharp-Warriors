@@ -27,97 +27,235 @@ Taking a look at what code is attached to each game element and how it's used.
 > Ak Scripts are part of the Wwise library, which there is already documentation for*
 
 # Code by class
-Taking a look at each file, class and method individually and much more in depth
-
+Taking a look at each file, class and method individually and much more in depth. While depth is a core component of this, due to the formating of the document, AVOID PUTTING CODE HERE PLEASE.
 ## OOF.cs
-  ### Start()
-  ### Update()
-  ### OnTriggerEnter(Collider other)
-  ### OnCollisionEnter(Collision other)
-  ### ActivateGoal(Collider other)
-  ### LevelComplete()
-  ### SelectRandomLevel()
-  ### resetLevel()
-*yes, with a lowercase 'r'*
-  ### OnApplicationQuit()
+> **Attached To:** [FirstPersonController](#firstpersoncontroller) </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+
+    
+  - ### Update()
+    > **Refrenced By:** 
+
+
+  - ### OnTriggerEnter(Collider other)
+    > **Refrenced By:** 
+
+
+  - ### OnCollisionEnter(Collision other)
+    > **Refrenced By:** 
+
+
+  - ### ActivateGoal(Collider other)
+    > **Refrenced By:** 
+
+
+  - ### LevelComplete()
+    > **Refrenced By:** 
+
+
+  - ### SelectRandomLevel()
+    > **Refrenced By:** 
+
+
+  - ### resetLevel()
+    *yes, with a lowercase 'r'*
+    > **Refrenced By:** 
+  
+  - ### OnApplicationQuit()
+    > **Refrenced By:** 
+    
 
 
 
 ## WallSound.cs
-  ### Start()
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
 
 
 ## GoalBehavior.cs
-  ### Start()
-  ### Update()
-  ### FixedUpdate()
-  ### Deactivate()
+> **Attached To:** [Goal](#goal) </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+
+  - ### Update()
+    > **Refrenced By:** 
+    
+  - ### FixedUpdate()
+    > **Refrenced By:** 
+    
+  - ### Deactivate()
+    > **Refrenced By:** 
+    
 
 
 ## BallMovement.cs
-  ### Start()
-  ### Update()
-  ### FixedUpdate()
-  ### OnCollisionEnter(Collision collision)
+> **Attached To:** [Ball](#ball) </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
+  - ### FixedUpdate()
+    > **Refrenced By:** 
+    
+  - ### OnCollisionEnter(Collision collision)
+    > **Refrenced By:** 
+    
   TODO add editor stuffs here
 
 
 
 ## SoundsForGoal.cs
-  ### Start()
-  ### Update()
-  ### OnTriggerEnter(Collider other)
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
+  - ### OnTriggerEnter(Collider other)
+    > **Refrenced By:** 
+    
 
 
 ## BallGenerator2.cs
-  ### Start()
-  ### Update()
-  ### Generate()
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
+  - ### Generate()
+    > **Refrenced By:** 
+    
 
 
 ## CollisionDetect.cs
-  ### OnCollisionEnter(Collision collision)
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### OnCollisionEnter(Collision collision)
+    > **Refrenced By:** 
+    
 
 
 ## CollisionTracker.cs
-  ### Start()
-  ### Update()
-  ### FixedUpdate()
-  ### OnCollisionEnter(Collision collision)
-  ### OnTriggerEnter(Collider other)
-  ### WriteToCSV()
+> **Attached To:** [FirstPresonController](#firstpersoncontroller) </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
+  - ### FixedUpdate()
+    > **Refrenced By:** 
+    
+  - ### OnCollisionEnter(Collision collision)
+    > **Refrenced By:** 
+    
+  - ### OnTriggerEnter(Collider other)
+    > **Refrenced By:** 
+    
+  - ### WriteToCSV()
+    > **Refrenced By:** 
+    
 
 
 ## GenerateObstacle.cs
-  ### Start()
-  ### Update()
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
 
 
 ## BallInitialVelocity.cs
-  ### Start()
-  ### Update()
-  ### FixedUpdate()
-  ### OnCollisionEnter(Collision collision)
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
+  - ### FixedUpdate()
+    > **Refrenced By:** 
+    
+  - ### OnCollisionEnter(Collision collision)
+    > **Refrenced By:** 
+    
   TODO Editor stuff here (again)
 
 
 ## FirstPersonController.cs
-  ### Update()
-  ### FixedUpdate()
-  ### CheckGround()
-  ### Jump()
-  ### Crouch()
-  ### HeadBob()
+> **Attached To:** [FirstPersonController](#firstpersoncontroller) </br>
+> **Refrenced By:** 
+
+  - ### Update()
+    > **Refrenced By:** 
+    
+  - ### FixedUpdate()
+    > **Refrenced By:** 
+    
+  - ### CheckGround()
+    > **Refrenced By:** 
+    
+  - ### Jump()
+    > **Refrenced By:** 
+    
+  - ### Crouch()
+    > **Refrenced By:** 
+    
+  - ### HeadBob()
+    > **Refrenced By:** 
+    
   TODO Editor stuff here (again again)
 
 
 ## EnviromentGeneratorPrefab1.cs
-  ### Start()
-  ### Update()
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
 
 
 ## EnviromentGeneratorPrefab2.cs
-  ### Start()
-  ### Update()
+> **Attached To:** </br>
+> **Refrenced By:** 
+
+  - ### Start()
+    > **Refrenced By:** 
+    
+  - ### Update()
+    > **Refrenced By:** 
+    
 
 
