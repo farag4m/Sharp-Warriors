@@ -13,15 +13,15 @@ Taking a look at what code is attached to each game element and how it's used.
 
 ## Goals
   ### Goal
-  - [GoalBehavior.cs](GoalBehavior.cs)
+  - [GoalBehavior.cs](#GoalBehavior.cs)
   - AkGameObj.cs*
   
 
 ## Player
 ### **FirstPersonController**
-  - [FirstPersonController.cs](FirstPersonController.cs)
-  - [CollisionTracker.cs](CollisionTracker.cs)
-  - [OOF.cs](OOF.cs)
+  - [FirstPersonController.cs](#FirstPersonController.cs)
+  - [CollisionTracker.cs](#CollisionTracker.cs)
+  - [OOF.cs](#OOF.cs)
   - AkListenerDistanceProbe.cs*
 > [!NOTE]
 > Ak Scripts are part of the Wwise library, which there is already documentation for*
