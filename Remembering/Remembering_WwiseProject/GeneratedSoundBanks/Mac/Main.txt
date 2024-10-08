@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2767456617	Play_Footsteps_Tile_Walk_04			\Default Work Unit\Play_Footsteps_Tile_Walk_04	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	546848770	Footsteps_Tile_Walk_04	C:\Users\nifta\Remembering\Remembering_WwiseProject\.cache\Mac\SFX\Footsteps_Tile_Walk_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Tile_Walk_04		55694
+

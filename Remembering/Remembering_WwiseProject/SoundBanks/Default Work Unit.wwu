@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3D284454-5A64-4E62-9E4D-6E4B1C7053A2}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{3D284454-5A64-4E62-9E4D-6E4B1C7053A2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{9A6EDB82-3BF1-4BCE-B672-491FA96BED9E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Footsteps_Tile_Walk_04" ID="{71793F43-1102-460F-A744-B4AD939A6548}" WorkUnitID="{031DD527-B9B7-4F24-AA23-5556ECE9EA23}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

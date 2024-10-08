@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{031DD527-B9B7-4F24-AA23-5556ECE9EA23}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{031DD527-B9B7-4F24-AA23-5556ECE9EA23}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Footsteps_Tile_Walk_04" ID="{71793F43-1102-460F-A744-B4AD939A6548}">
+					<ChildrenList>
+						<Action Name="" ID="{EF55EC35-3A38-48A9-AA4E-48DC18D56A52}" ShortID="284524814">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Tile_Walk_04" ID="{361F25E9-5FF6-4A45-ACEF-B63BFFD9DB5F}" WorkUnitID="{ACD9C560-9418-4693-8B3C-8E239CAE227F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footsteps" ID="{DB849F1B-E1ED-4538-9AAE-774E4E5407FC}">
+					<ChildrenList>
+						<Action Name="" ID="{390E28E7-5F8C-485A-870A-0ED960031FBF}" ShortID="592647586">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sfx" ID="{8321421B-6180-4F4A-AC98-739E4FEE595A}" WorkUnitID="{ACD9C560-9418-4693-8B3C-8E239CAE227F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
