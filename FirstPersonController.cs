@@ -143,10 +143,13 @@ public class FirstPersonController : MonoBehaviour
     #region WWise Events and such
 
     [Header("WWise Events")]
-    private bool footstepPlaying = false;
-    private float lastFootstep = 0;
     [SerializeField] public AK.Wwise.Event walkFootstep;
     [SerializeField] public AK.Wwise.Event stomp;
+    public float stepInterval = 0.1f; // a variable to determine interval between steps
+    public float stepTimer = 0f;    // tracks how much time passed since last footstep sound
+    float inputThreshold = 0.1f; // Define a small threshold so that footsteps stop when player stops, no delay
+    float currentSpeed; // variable to calculate the current speed
+    float stepSlow = 1.8f;  // variable to slow footsteps down in accordance with headbob
 
     #endregion
 
@@ -170,7 +173,7 @@ public class FirstPersonController : MonoBehaviour
             sprintCooldownReset = sprintCooldown;
         }
 
-        lastFootstep = Time.time;
+        
     }
 
     void Start()
@@ -221,6 +224,8 @@ public class FirstPersonController : MonoBehaviour
         }
 
         #endregion
+
+        //StartCoroutine(PlayFootstepAudio());
     }
 
     float camRotation;
@@ -392,6 +397,43 @@ public class FirstPersonController : MonoBehaviour
         {
             HeadBob();
         }
+
+        #region Footsteps
+        if (Input.GetKey(KeyCode.LeftShift)) // Assuming LeftShift is the run key
+        {
+            currentSpeed = sprintSpeed;
+        }
+        else
+        {
+            currentSpeed = walkSpeed;
+        }
+
+        // Where we change the time between footsteps, increases if running
+        float stepInterval2 = stepInterval * (walkSpeed / currentSpeed) * stepSlow;
+
+        // check if input from player
+        // vertical = W , S
+        // horizontal = A , D
+
+        if (Mathf.Abs(Input.GetAxis("Vertical")) > inputThreshold || Mathf.Abs(Input.GetAxis("Horizontal")) > inputThreshold)
+        {
+            stepTimer += Time.deltaTime;
+            if (stepTimer >= stepInterval2)
+            {
+                walkFootstep.Post(gameObject);
+                stepTimer = 0;
+            }
+        }
+        else
+        {
+            stepTimer = 0;
+        }
+        #endregion
+
+        if (isWalking == false && isSprinting == false && Input.GetKeyDown(KeyCode.Q))
+        {
+            stomp.Post(gameObject);
+        }
     }
 
     void FixedUpdate()
@@ -410,11 +452,14 @@ public class FirstPersonController : MonoBehaviour
             if ((targetVelocity.x != 0 || targetVelocity.z != 0) && isGrounded)
             {
                 isWalking = true;
+                
+                /*
                 if (!footstepPlaying && isWalking)
                 {
                     walkFootstep.Post(gameObject);
                     footstepPlaying = true;
                 }
+                */
                 
                 
             }
@@ -422,12 +467,14 @@ public class FirstPersonController : MonoBehaviour
             {
                 isWalking = false;
                 
+                /*
                 if (footstepPlaying)
                 {
                     walkFootstep.Stop(gameObject);
                     footstepPlaying = false;
                     
                 }
+                */
 
 
 
@@ -488,6 +535,8 @@ public class FirstPersonController : MonoBehaviour
         }
 
         #endregion
+
+       
     }
 
     // Sets isGrounded based on a raycast sent straigth down from the player object
@@ -574,6 +623,20 @@ public class FirstPersonController : MonoBehaviour
             timer = 0;
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
         }
+    }
+
+    IEnumerator PlayFootstepAudio()
+    {
+        Start:
+
+        if (isWalking == true)
+        {
+            walkFootstep.Post(gameObject);
+            yield return new WaitForSeconds(1);
+        }
+
+        goto Start;
+
     }
 
 }
