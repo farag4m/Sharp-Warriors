@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{9A6EDB82-3BF1-4BCE-B672-491FA96BED9E}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Footsteps_Tile_Walk_04" ID="{71793F43-1102-460F-A744-B4AD939A6548}" WorkUnitID="{031DD527-B9B7-4F24-AA23-5556ECE9EA23}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps Rock" ID="{C4724D26-6331-474E-A3D5-E7DA9B56CF7A}" WorkUnitID="{ACD9C560-9418-4693-8B3C-8E239CAE227F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -1,5 +1,13 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Master Audio Bus\Footsteps	
+	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3909795416	ReverbRoom			\Default Work Unit\Master Audio Bus\Reverbs\ReverbRoom	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

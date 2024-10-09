@@ -1,6 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2767456617	Play_Footsteps_Tile_Walk_04			\Default Work Unit\Play_Footsteps_Tile_Walk_04	
+	3567320189	Play_Footsteps_Rock			\Default Work Unit\Working Footsteps\Play_Footsteps_Rock	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	546848770	Footsteps_Tile_Walk_04	C:\Users\nifta\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Tile_Walk_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Tile_Walk_04		55694
+	71090658	Footsteps_Rock_Walk_09	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_09_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_09		42020
+	96780551	Footsteps_Rock_Walk_02	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_02		40428
+	133066476	Footsteps_Rock_Walk_07	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_07_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_07		39190
+	270359800	Footsteps_Rock_Walk_01	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_01		41962
+	319737999	Footsteps_Rock_Walk_08	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_08_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_08		37032
+	335028050	Footsteps_Rock_Walk_05	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_05		46992
+	457405478	Footsteps_Rock_Walk_03	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_03		43178
+	546848770	Footsteps_Tile_Walk_04	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Tile_Walk_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Tile_Walk_04		55694
+	640151832	Footsteps_Rock_Walk_06	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_06		43946
+	642433371	Footsteps_Rock_Walk_04	C:\Users\nifta\Documents\GitHub\Sharp-Warriors\Remembering\Remembering_WwiseProject\.cache\Windows\SFX\Footsteps_Rock_Walk\Footsteps_Rock_Walk_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Rock\Footsteps_Rock_Walk_04		36590
 

@@ -265,6 +265,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Player_Land" ID="{80758345-0ABE-4BCF-B6D6-6E169B2B0690}" ShortID="44479861">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
@@ -275,6 +282,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Player_Land" ID="{C3F20F2A-0CA9-4790-8CC2-62AD429A8030}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="LoopEnd" Type="Real64" Value="0.255166666666667"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Sfx\Player_Land.wav</AudioFile>
 									<MediaIDList>
@@ -339,6 +351,219 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<RandomSequenceContainer Name="Footsteps Rock" ID="{C4724D26-6331-474E-A3D5-E7DA9B56CF7A}" ShortID="717784189">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Footsteps" ID="{8340B8BC-33AF-4770-8723-DF736A3D2DB6}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Footsteps_Rock_Walk_01" ID="{05C3548C-7CE2-4EE3-82A5-C69334022820}" ShortID="633556774">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_01" ID="{BE510F37-FBD2-4CB3-B13C-4E7CB0B64E37}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="270359800"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_01" ID="{BE510F37-FBD2-4CB3-B13C-4E7CB0B64E37}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_02" ID="{6EB4600D-519B-4A81-BF45-D778D86EDEDB}" ShortID="792501948">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_02" ID="{264FB25D-FA47-4877-9D8B-F0A5F876C69D}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="96780551"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_02" ID="{264FB25D-FA47-4877-9D8B-F0A5F876C69D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_03" ID="{50912EC4-0AB3-48AA-BCD9-226EDEC1DACB}" ShortID="306983424">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_03" ID="{F7406597-D1D6-402F-A379-B913D37FC6FF}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="457405478"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_03" ID="{F7406597-D1D6-402F-A379-B913D37FC6FF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_04" ID="{8E5DD904-AC9A-4A5D-9185-E8315DBB2931}" ShortID="919648821">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_04" ID="{39C31436-A4CC-4D5B-9B64-4938A9F63A69}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="642433371"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_04" ID="{39C31436-A4CC-4D5B-9B64-4938A9F63A69}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_05" ID="{CA448AB2-B90D-4AB6-8320-B9967C60A315}" ShortID="420315765">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_05" ID="{A342DC35-10B1-497F-A48D-2619CC260F52}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="335028050"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_05" ID="{A342DC35-10B1-497F-A48D-2619CC260F52}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_06" ID="{5233FC79-059C-4FEF-BDA3-B4361AD845D7}" ShortID="558358736">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_06" ID="{028FC529-99CD-4D9A-A903-D96DA45B4F06}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="640151832"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_06" ID="{028FC529-99CD-4D9A-A903-D96DA45B4F06}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_07" ID="{0578B7F5-0466-4CC3-92D9-1665AE0C3648}" ShortID="457627731">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_07" ID="{6F3DF546-3836-45A6-819A-EC2C1824083F}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="133066476"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_07" ID="{6F3DF546-3836-45A6-819A-EC2C1824083F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_08" ID="{F6FBD32B-CE94-4621-A8FC-B39A2302130D}" ShortID="297276708">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_08" ID="{ECB66A18-1515-4168-B8B1-A0403358F5C9}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="319737999"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_08" ID="{ECB66A18-1515-4168-B8B1-A0403358F5C9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_Rock_Walk_09" ID="{F3486F45-F9A6-4BE2-98AA-5FFFF428605F}" ShortID="105054908">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D37CA85C-5FA3-403D-9A6D-09EFDFCCF3C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{16A93A68-DFF2-48E3-9542-248C48019354}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_Rock_Walk_09" ID="{49049BF8-10BD-4E60-AC30-715050BB5AE7}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_Rock_Walk\Footsteps_Rock_Walk_09.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="71090658"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_Rock_Walk_09" ID="{49049BF8-10BD-4E60-AC30-715050BB5AE7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

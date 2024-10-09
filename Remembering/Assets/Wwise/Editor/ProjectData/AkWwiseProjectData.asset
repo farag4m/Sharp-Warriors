@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5444283d645a624e9e4d6e4b1c7053a2
     GuidInternal: 
-    m_lastTime: -8584737204119612432
+    m_lastTime: -8584731793957958658
     List:
     - name: Main
       guid: 82db6e9af13bce4bb672491fa96bed9e
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 27d51d03b7b9244faa235556ece9ea23
     GuidInternal: 
-    m_lastTime: -8584732539225493173
+    m_lastTime: -8584731793958249019
     List:
     - name: Footsteps
       guid: 1b9f84dbede138459aae774e4e5407fc
@@ -113,6 +113,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Footsteps_Rock
+      guid: 8141a3a545869b4cbb1d6f65b26daca6
+      id: 3567320189
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 27d51d03b7b9244faa235556ece9ea23
+      - ElementName: Working Footsteps
+        ObjectType: 4
+        guid: b1764281f9ea7c4893189b3136d3eae2
+      - ElementName: Play_Footsteps_Rock
+        ObjectType: 3
+        guid: 8141a3a545869b4cbb1d6f65b26daca6
+      Path: Events\Default Work Unit\Working Footsteps\Play_Footsteps_Rock
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps_Tile_Walk_04
       guid: 433f797102110f46a744b4ad939a6548
       id: 2767456617
@@ -128,8 +148,25 @@ MonoBehaviour:
         guid: 433f797102110f46a744b4ad939a6548
       Path: Events\Default Work Unit\Play_Footsteps_Tile_Walk_04
       maxAttenuation: 0
-      maxDuration: 0.57914585
-      minDuration: 0.57914585
+      maxDuration: -1
+      minDuration: -1
+    - name: Working Footsteps
+      guid: b1764281f9ea7c4893189b3136d3eae2
+      id: 4002114387
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 27d51d03b7b9244faa235556ece9ea23
+      - ElementName: Working Footsteps
+        ObjectType: 4
+        guid: b1764281f9ea7c4893189b3136d3eae2
+      Path: Events\Default Work Unit\Working Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -237,7 +274,7 @@ MonoBehaviour:
     m_lastTime: -8584741559765728930
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a0000000b0000000c0000000d0000000e000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c0000000d0000000e0000001b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

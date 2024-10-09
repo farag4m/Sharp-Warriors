@@ -9,6 +9,30 @@
 							<ObjectRef Name="System" ID="{9142F1E7-E990-4BF3-8C26-A383D123CF2E}" WorkUnitID="{5787860D-FE24-40C3-8932-2F788BA273AF}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Footsteps" ID="{8340B8BC-33AF-4770-8723-DF736A3D2DB6}"/>
+						<Bus Name="Reverbs" ID="{F538C85A-4CC6-433B-AFB2-7EFC8091564C}">
+							<ChildrenList>
+								<AuxBus Name="ReverbRoom" ID="{ADE9D837-09E2-4739-A62A-ED79A752E5A2}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{A68890C1-9D91-4D1C-ABF9-F9DAC3973160}" ShortID="813806461">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

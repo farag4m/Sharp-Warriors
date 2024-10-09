@@ -9,18 +9,32 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5F6E4A8B-12C2-BACE-3C70-E817AF9A2CF0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="3673681183" Name="Large_Bright_Chamber1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="2385628198" Name="Footsteps"/>
+				<Bus Id="3545700988" Name="Reverbs"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="3909795416" Name="ReverbRoom">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3673681183"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -30,17 +44,66 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CDEA689B-E45A-9572-C719-0EF49962F605}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2F6C71C6-A92B-5210-12ED-7F51E320828F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="71090658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_09.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_09_818F3B66.wem</CachePath>
+				</File>
+				<File Id="96780551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_02.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="133066476" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_07.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="270359800" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_01.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="319737999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_08.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="335028050" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_05.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="457405478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_03.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_03_818F3B66.wem</CachePath>
+				</File>
 				<File Id="546848770" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_Tile_Walk_04.wav</ShortName>
 					<CachePath>SFX/Footsteps_Tile_Walk_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="640151832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_06.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="642433371" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_Rock_Walk\Footsteps_Rock_Walk_04.wav</ShortName>
+					<CachePath>SFX/Footsteps_Rock_Walk/Footsteps_Rock_Walk_04_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="2767456617" Name="Play_Footsteps_Tile_Walk_04" DurationType="OneShot" DurationMin="0.57914585" DurationMax="0.57914585">
+				<Event Id="3567320189" Name="Play_Footsteps_Rock">
+					<MediaRefs>
+						<MediaRef Id="71090658"/>
+						<MediaRef Id="96780551"/>
+						<MediaRef Id="133066476"/>
+						<MediaRef Id="270359800"/>
+						<MediaRef Id="319737999"/>
+						<MediaRef Id="335028050"/>
+						<MediaRef Id="457405478"/>
+						<MediaRef Id="640151832"/>
+						<MediaRef Id="642433371"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2767456617" Name="Play_Footsteps_Tile_Walk_04">
 					<MediaRefs>
 						<MediaRef Id="546848770"/>
 					</MediaRefs>
@@ -48,5 +111,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C63F0B1E-A53E-7624-ACC6-C4653B9C3D16}</FileHash>
+	<FileHash>{2519BEF6-CEF8-94AA-803C-BCA2D088E26E}</FileHash>
 </SoundBanksInfo>

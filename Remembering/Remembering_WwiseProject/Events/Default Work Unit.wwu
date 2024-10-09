@@ -14,6 +14,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Working Footsteps" ID="{814276B1-EAF9-487C-9318-9B3136D3EAE2}" ShortID="861115262">
+					<ChildrenList>
+						<Event Name="Play_Footsteps_Rock" ID="{A5A34181-8645-4C9B-BB1D-6F65B26DACA6}">
+							<ChildrenList>
+								<Action Name="" ID="{5065583A-3E49-4BD7-A3BE-792967695EB7}" ShortID="763026646">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps Rock" ID="{C4724D26-6331-474E-A3D5-E7DA9B56CF7A}" WorkUnitID="{ACD9C560-9418-4693-8B3C-8E239CAE227F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Event Name="Footsteps" ID="{DB849F1B-E1ED-4538-9AAE-774E4E5407FC}">
 					<ChildrenList>
 						<Action Name="" ID="{390E28E7-5F8C-485A-870A-0ED960031FBF}" ShortID="592647586">

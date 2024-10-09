@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c22409920c10e142bef1ea8e7c005e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
+  triggerList: f2d9e0ec
   useOtherObject: 0
   data:
     idInternal: 0
@@ -610,11 +610,14 @@ MonoBehaviour:
   runSpeed: 12
   jumpPower: 7
   gravity: 10
+  stepInterval: 0.5
+  FootstepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7c593827763555742b6c4a2b64fd3258, type: 2}
   lookSpeed: 2
   lookXLimit: 45
-  defaultHeight: 2
-  crouchHeight: 1
-  crouchSpeed: 3
+  canMove: 1
 --- !u!143 &911688498
 CharacterController:
   m_ObjectHideFlags: 0
@@ -791,6 +794,7 @@ GameObject:
   - component: {fileID: 1207579450}
   - component: {fileID: 1207579449}
   - component: {fileID: 1207579448}
+  - component: {fileID: 1207579451}
   m_Layer: 0
   m_Name: FPS
   m_TagString: Untagged
@@ -886,6 +890,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207579446}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1207579451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207579446}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 2, z: 1}
+  m_Center: {x: 2, y: 0, z: 0}
 --- !u!1001 &1285998539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1444,7 +1469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb3c0c872a9e45489e1a85e94330e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: fe6ae587f7e1664c
+  triggerList: 
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
